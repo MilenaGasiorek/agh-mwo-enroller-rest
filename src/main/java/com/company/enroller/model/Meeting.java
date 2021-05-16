@@ -76,7 +76,9 @@ public class Meeting {
 		this.participants.add(participant);
 	}
 
-	public void removeParticipant(Participant participant) {
+	public void removeParticipant(String login) {
+		Participant participant = new Participant();
+		participant.setLogin(login);
 		this.participants.remove(participant);
 	}
 
